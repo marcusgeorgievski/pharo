@@ -65,6 +65,14 @@ Parser>>parse: line
 
 - Seaside, Teapot, Zinc, Garage, etc.
 
+## W4S8 - Seaside Overview
+
+## W4S9 - Rendering Components
+
+## W4S10 - MetaData and REST
+
+## W4S11 - Voyage
+
 ## NOTE
 
 The seaside lecture notes are not included here. I may come back to them later and create them in a separate dir.
