@@ -79,6 +79,9 @@ Todo:
 - Advanced Points on Classes
 - Variable Size Object
 - Understanding Metaclasses
+
+Todo
+
 - Reflective Operations for Live Programming
 - `doesNotUnderstand`
 - Stack as an Object

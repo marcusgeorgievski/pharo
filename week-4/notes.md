@@ -67,18 +67,42 @@ Parser>>parse: line
 
 ## W4S8 - Seaside Overview
 
+- Define resusable and stateful components
+- Components
+  - Instance of subclass `WAComponent`
+  - Rendered in HTML
+
 ## W4S9 - Rendering Components
 
 ## W4S10 - MetaData and REST
 
+- Magritte
+- Forms
+
 ## W4S11 - Voyage
 
-## NOTE
+### NoSQL
 
-The seaside lecture notes are not included here. I may come back to them later and create them in a separate dir.
+```
+| repo |
+repo := VOMongoRepository new.      -> prototyping -> VOMongoRepository new.
+    host: 'localhost'
+    database: 'demo'.
+repository enableSingleton.
+```
 
-The following two Live lectures are refactoring and quality checkers. I'll come back to this near the end as I focus on the language first, then tooling.
+### Querying
 
-## W4 - LiveD
+```
+Obj selectAll.
+Obj selectOne: [:each | each name = 'foo'].
+Obj selectMany: [:each | each name = 'foo'].
 
-## W4 - LiveE
+Obj selectOne: {#name -> 'foo'} asDictionary.
+
+Obj
+    selectMany: {#name -> 'foo'} asDictionary
+    sortBy: {#name -> VOOrdering ascending}
+    limit: 10
+    offset 0.
+```
